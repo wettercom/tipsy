@@ -16,17 +16,21 @@ It's used by Twitter, Github, Slideshare and Bitbucket, amongst others.
 
 ## Homepage:
 
-http://onehackoranother.com/projects/jquery/tipsy
+http://martinmartimeo.github.io/tipsy/
 
 ## Source:
 
-Hosted at GitHub; browse at:
+Original Hosted at GitHub; browse at:
 
   http://github.com/jaz303/tipsy/tree/master
+  
+This Version Hosted at Github; browse at:
+                               
+ http://github.com/MartinMartimeo/tipsy/tree/master
 
 Or clone from:
 
-    git://github.com/jaz303/tipsy.git
+    git://github.com/MartinMartimeo/tipsy.git
 
 ## Usage:
 
