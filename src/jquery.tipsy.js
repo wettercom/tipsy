@@ -5,8 +5,8 @@
 
 (function($, window, undefined) {
 
-    function maybeCall(thing, ctx) {
-        return (typeof thing == 'function') ? (thing.call(ctx)) : thing;
+    function maybeCall(thing, ctx, args) {
+        return (typeof thing == 'function') ? (thing.call(ctx, args)) : thing;
     }
 
     function isElementInDOM(ele) {
@@ -108,6 +108,10 @@
 
                 $tip.css(tp).addClass('tipsy-' + gravity + this.options.theme);
                 $tip.find('.tipsy-arrow' + this.options.theme)[0].className = 'tipsy-arrow' + this.options.theme + ' tipsy-arrow-' + gravity.charAt(0) + this.options.theme;
+
+                if (this.options.beforeShow) {
+                    maybeCall(this.options.beforeShow, this.$element[0], {$tip: $tip, pos: pos});
+                }
 
                 if (this.options.slide) {
                     $tip.css({visibility: 'visible', opacity: this.options.opacity, 'max-height': 0});
