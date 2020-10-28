@@ -1,12 +1,12 @@
 {
-    "name": "jquery.tipsy",
+    "name": "@wettercom/jquery.tipsy",
     "version": "1.0.4",
     "description": "Facebook-style tooltip plugin for jQuery",
     "author": "Jason Frame <jason@onehackoranother.com>",
     "main": "src/jquery.tipsy.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/jaz303/tipsy"
+        "url": "git://github.com/wettercom/tipsy.git"
     },
     "dependencies": {
         "jquery": "*"
@@ -17,11 +17,6 @@
     "script": {
         "prepublish": "uglifyjs src/jquery.tipsy.js -o dist/jquery.tipsy.min.js"
     },
-    "maintainers": [{
-            "name": "Martin Martimeo",
-            "email": "martin@martimeo.de",
-            "web": "https://github.com/MartinMartimeo/tipsy"
-    }],
     "keywords": [
         "jquery",
         "tipsy",
@@ -39,6 +34,8 @@
             "*.css"
         ]
     }],
-    "licencse": "MIT"
-
+    "licencse": "MIT",
+    "publishConfig": {
+      "registry": "https://npm.pkg.github.com/"
+    }
 }
